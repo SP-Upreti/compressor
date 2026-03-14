@@ -54,7 +54,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: #25671E;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -126,4 +126,40 @@
   html {
     @apply font-sans;
   }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* For the whole page */
+::-webkit-scrollbar {
+  width: 10px;
+  /* width of the scrollbar */
+
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  /* track color */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4f46e5;
+  /* thumb color (blue-ish royal) */
+  border-radius: 6px;
+  border: 3px solid #f0f0f0;
+  /* space around thumb */
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3730a3;
+  /* darker on hover */
+}
+
+button {
+  cursor: pointer;
 }
