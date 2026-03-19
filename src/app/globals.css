@@ -135,7 +135,7 @@ html {
 
 /* For the whole page */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0;
   /* width of the scrollbar */
 
 }
