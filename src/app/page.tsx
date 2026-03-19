@@ -249,7 +249,7 @@ export default function Home() {
         style={{
           scrollbarWidth: "none"
         }}
-        className="min-h-screen w-full px-4 lg:px-0 max-w-7xl mx-auto flex justify-center items-center mb-10 mt-32!">
+        className={`min-h-screen w-full px-4 lg:px-0 max-w-7xl mx-auto flex justify-center items-center mb-10 ${(files.length || compressedFiles.length) ? " mt-32!" : "mt- sm:mt-0"}`}>
         <ImageUploader
           files={files}
           onChange={setFiles}
@@ -274,6 +274,6 @@ export default function Home() {
       {/* <InstructionsSection />
       <AboutSection />
       <ContactSection /> */}
-    </main>
+    </main >
   );
 }

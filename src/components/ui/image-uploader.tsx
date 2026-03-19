@@ -159,7 +159,7 @@ function UploadedFilesGrid({ files, previewUrls, onRemoveFile, onClearUploaded }
     }
 
     return (
-        <div className="sm:grid sm:grid-cols-3 border-b mt-8 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <div className="sm:grid sm:grid-cols-3   mt-8 md:grid-cols-4 lg:grid-cols-5 gap-4">
             <div className="col-span-5 flex items-center justify-between">
                 <h2 className="font-semibold text-xl">Uploaded files - {previewUrls.length}</h2>
             </div>
